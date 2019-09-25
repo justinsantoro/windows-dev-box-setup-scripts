@@ -34,7 +34,7 @@ To run a recipe script, click a link in the table below from your target machine
 
 |Click link to run  |Description  |
 |---------|---------|
-|<a href='http://boxstarter.org/package/url?https://raw.githubusercontent.com/justinsantoro/windows-dev-box-setup-scripts/master/full_dev_environment.ps1'>Full Dev Environment</a>     | Full Dev environment for work |
+|<a href='http://boxstarter.org/package/url?https://raw.githubusercontent.com/justinsantoro/windows-dev-box-setup-scripts/gb/full_dev_environment.ps1'>Full Dev Environment</a>     | Full Dev environment for work |
 
 
 **Notes:**  
