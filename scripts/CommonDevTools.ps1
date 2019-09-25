@@ -12,3 +12,4 @@ choco install -y autohotkey
 choco install -y kdiff3
 choco install -y innosetup
 choco install -y keybase
+choco install -y keypass

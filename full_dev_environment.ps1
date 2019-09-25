@@ -29,11 +29,13 @@ executeScript "Browsers.ps1";
 executeScript "CommonDevTools.ps1";
 executeScript "AdminTools.ps1";
 executeScript "GraphicTools.ps1";
-executeScript "WSL.ps1";
 executeScript "Docker.ps1";
-executeScript "SqlServer.ps1";
 executeScript "VisualStudio.ps1";
+executeScript "SqlServer.ps1";
 
+#--- Init specific program configs ---#
+executeScript "LoadPuttySessions"
+executeScript "InitTortoiseHgSettings"
 
 #--- reenabling critial items ---
 Enable-UAC

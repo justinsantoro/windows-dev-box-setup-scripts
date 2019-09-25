@@ -1,0 +1,2 @@
+Invoke-Webrequest https://gist.githubusercontent.com/justinsantoro/856332cf958fa450a03ac1b8bff5afff/raw/f6332fcfb493e2047ff4f63f0decae5df79901d8/gb_mercurial.ini `
+  -OutFile $env:HOMEPATH\mercurial.ini
