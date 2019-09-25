@@ -34,8 +34,8 @@ executeScript "VisualStudio.ps1";
 executeScript "SqlServer.ps1";
 
 #--- Init specific program configs ---#
-executeScript "LoadPuttySessions"
-executeScript "InitTortoiseHgSettings"
+executeScript "LoadPuttySessions.ps1"
+executeScript "InitTortoiseHgSettings.ps1"
 
 #--- reenabling critial items ---
 Enable-UAC
