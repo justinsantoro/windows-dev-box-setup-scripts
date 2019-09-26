@@ -1,23 +1,23 @@
 
-# About this rep
+# About this repo
 
 These scripts leverage two popular open source projects.
 - Boxstarter [boxstarter.org](http://boxstarter.org)
 - Chocolatey [chocolatey.org](http://chocolatey.org)
 
 Boxstarter is a wrapper for Chocolatey and includes features like managing reboots for you. We're using the Boxstarter web launcher to start the installation process:<br/>
-https://boxstarter.org/Learn/WebLauncher
+~~https://boxstarter.org/Learn/WebLauncher~~ (No longer documented)
 
 ## Project structure
 The script code is organized in a hierarchy
 
-**Recipes**
-A recipe is the script you run on a fresh install.  It calls multiple helper scripts.  These currently live in the root of the project (full_dev_environment.ps1, etc.) 
+**Recipes**: A recipe is the script you run on a fresh install.  It calls multiple helper scripts.  These currently live in the root of the project (full_dev_environment.ps1, etc.) 
 
-**Helper Scripts**: A helper script performs setup routines that may be useful by many recipes. Recipes call helper scripts.  The helper scripts live in the **scripts** folder. Once you have Boxstarter installed you can run a helper script directly like so:
+**Helper Scripts**: A helper script performs setup routines that may be useful by many recipes. Recipes call helper scripts.  The helper scripts live in the **scripts** folder. 
+Once you have Boxstarter installed you can run a helper script directly like so:
 `Install-BoxstarterPackage -PackageName https://raw.githubusercontent.com/justinsantoro/windows-dev-box-setup-scripts/gb/scripts/VisualStudio.ps1`
 
-## You may want to customize the scripts
+## Customizing
 *Note: The one-click links use the following format.  When working out of a different Fork or Branch you'll want to update the links as follows:*
 
 `http://boxstarter.org/package/url?https://raw.githubusercontent.com/{{GITHUB_DOMAIN}}/windows-dev-box-setup-scripts/{{YOUR_BRANCH}}/{{RECIPE_NAME.ps1}}
@@ -25,11 +25,11 @@ A recipe is the script you run on a fresh install.  It calls multiple helper scr
 
 ## How to run the scripts
 
-To run a recipe script, click a link in the table below from your target machine using Edge. This will download the Boxstarter one-click application, and prompt you for Boxstarter to run with Administrator privileges (which it needs to do its job). On start it will ask you to type your user password so that it can automatically login after a reboot. You can then leave the job unattended and come back when it's finished.
+To run a recipe script, click a link in the table below from your target machine using Edge. This will download the Boxstarter one-click application and prompt you for Boxstarter to run with Administrator privileges (which it needs to do its job). On started Boxstarter may ask you to type your user password so that it can automatically login after a reboot. You can then leave the job unattended and come back when it's finished.
 
 |Click link to run  |Description  |
 |---------|---------|
-|<a href='http://boxstarter.org/package/url?https://raw.githubusercontent.com/justinsantoro/windows-dev-box-setup-scripts/gb/full_dev_environment.ps1'>Full Env</a>     | Most everything needed to facilidate development, administration, and design excluding (unfortunately) MSOffice. Will initialize configs for TortoiseHg and PuTTy. Only manual step required to start cloning remote repos is to point puTTy to your SSH Key. |
+|<a href='http://boxstarter.org/package/url?https://raw.githubusercontent.com/justinsantoro/windows-dev-box-setup-scripts/gb/full_dev_environment.ps1'>Full Env</a>     | Most everything needed to facilidate development, administration, and design excluding, unfortunately, MSOffice. Will initialize configs for TortoiseHg and PuTTy. Only manual step required to start cloning remote repos is to point puTTy to your SSH Key. |
 
 
 **Notes:**  
